@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 { font-family: Helvetica, sans-serif; font-weight: 900; l
 
 p, dl, ol, ul { font-size: 1rem; margin-top: 0; margin-bottom: 1rem; }
 
-ol, ul { padding-left: 2rem; }
+ol, ul { padding-left: 0rem; }
 
 pre, code, samp { font-family: "Source Code Pro", Consolas, monospace; font-size: inherit; }
 
@@ -322,7 +322,7 @@ body { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: 
 
 .site-nav { float: right; line-height: 56px; }
 .site-nav .page-link { line-height: 1.5; }
-.site-nav .page-link:not(:first-child) { margin-left: 10px; }
+.site-nav .page-link:not(:first-child) { margin-left: 1px; }
 
 .header-bar { border-bottom: 1px solid #ccc; font-size: 20px; display: block; opacity: 0.75; width: 100%; text-align: center; padding-top: 25px; padding-bottom: 4rem; line-height: 3em; z-index: 25; }
 .header-bar h1 { color: #cf0000; font-size: 75px; }
@@ -336,18 +336,18 @@ footer { background-color: #424242; border-top: thin solid #424242; color: #ccc;
 footer a { color: #fff; }
 footer a:hover { color: #cf0000; }
 
-.page-content { padding: 100px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ }
+.page-content { padding: 0px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ }
 
 .page-heading { font-size: 20px; }
 
-.contacticon { display: block; font-size: 60px; margin: 10px; }
+.contacticon { display: block; font-size: 60px; margin: 1px; }
 
 .center { text-align: center; }
 
 .post-header { margin-bottom: 40px; }
 
 .post-list { margin: 0; padding: 0; list-style: none; }
-.post-list > li { border-bottom: 1px solid #ccc; padding-bottom: 2rem; padding-top: 2rem; }
+.post-list > li { border-bottom: 1px solid #ccc; padding-bottom: 2rem; padding-top: 2rem;}
 
 .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; margin-bottom: 10px; margin-top: 0; }
 
@@ -402,7 +402,7 @@ footer a:hover { color: #cf0000; }
 
 .button-disabled:hover, .button-disabled:active, .button-disabled:focus { cursor: not-allowed; background-color: #999; }
 
-.publications h2 { color: #cf0000; font-size: 32px; margin-bottom: 30px; text-align: center; }
+.publications h2 { color: #cf0000; font-size: 32px; margin-bottom: 30px; text-align: left; }
 
 .year { border-top: 1px solid #ccc; color: #ccc; margin: 0 -3em -2.5ex -2em; padding-top: 1ex; text-align: right; }
 
@@ -424,7 +424,7 @@ footer a:hover { color: #cf0000; }
 
 .star { color: #cf0000; font-style: normal; }
 
-blockquote { border-left: 5px solid #7a7a7a; font-style: italic; margin-left: 0.5rem; padding: 0.5rem; }
+blockquote { border-left: 5px solid #7a7a7a; font-style: italic; margin-left: 0rem; padding: 0rem; }
 
 blockquote footer { background-color: #fff; border-color: transparent; color: #7a7a7a; font-size: .85rem; font-style: normal; text-align: left; padding: 0; }
 
@@ -456,9 +456,9 @@ figcaption { font-size: 0.875rem; }
 
 .blankbox { background: hsl(0, 100%, 44%); }
 
-.img_row { height: 275px; width: 100%; overflow: hidden; box-sizing: border-box; }
+.img_row { height: 500px; width: 100%; overflow: hidden; box-sizing: border-box; vertical-align: middle;}
 
-.col { width: 100%; height: 100%; float: left; object-fit: cover; box-sizing: border-box; padding: 5px; }
+.col { width: 100%; height: 100%; float: left; object-fit: cover; box-sizing: border-box; padding: 1px; vertical-align: middle;}
 
 .one { width: 33.33%; }
 
