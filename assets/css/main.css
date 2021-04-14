@@ -19,7 +19,6 @@ button, .button { font-family: Helvetica, sans-serif; font-size: inherit; font-w
 
 .button:hover { text-decoration: none; }
 
-/* Basscss Base Forms */
 input, select, textarea, fieldset { font-size: 1rem; margin-top: 0; margin-bottom: 0.5rem; }
 
 input[type=text], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=week] { box-sizing: border-box; height: 2.25rem; padding: 0.5rem 0.5rem; vertical-align: middle; -webkit-appearance: none; }
@@ -306,7 +305,7 @@ em img { max-width: 100%; margin-left: 0; }
 
 body { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
 
-.wrapper { max-width: -webkit-calc(800px - (50px * 2)); max-width: calc(800px - (50px * 2)); margin-right: auto; margin-left: auto; padding-right: 50px; padding-left: 50px; }
+.wrapper { max-width: -webkit-calc(1000px - (50px * 2)); max-width: calc(1000px - (50px * 2)); margin-right: auto; margin-left: auto; padding-right: 20px; padding-left: 20px; }
 
 .clearfix:before, .wrapper:before, .clearfix:after, .wrapper:after { content: ' '; display: table; }
 
@@ -347,7 +346,7 @@ footer a:hover { color: #cf0000; }
 .post-header { margin-bottom: 40px; }
 
 .post-list { margin: 0; padding: 0; list-style: none; }
-.post-list > li { border-bottom: 1px solid #ccc; padding-bottom: 2rem; padding-top: 2rem;}
+.post-list > li { border-bottom: 1px solid rgb(161, 161, 161); padding-bottom: 2rem; padding-top: 2rem;}
 
 .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; margin-bottom: 10px; margin-top: 0; }
 
@@ -374,7 +373,7 @@ footer a:hover { color: #cf0000; }
 .address { font-family: monospace; }
 .address p { margin: 0; }
 
-.news { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; }
+.news { border-top: 1px solid #a7a7a7; margin-top: 30px; padding-top: 20px; }
 .news h2 { font-weight: bold; margin-top: 0; margin-bottom: 10px; }
 .news table { border-collapse: collapse; width: 100%; }
 .news table .date { width: 19%; }
@@ -382,7 +381,7 @@ footer a:hover { color: #cf0000; }
 .news table tr { text-align: left; }
 .news table td { padding: 6px 0; vertical-align: top; border: none; }
 
-.social { border-top: 1px solid #e8e8e8; margin-top: 50px; padding-top: 20px; }
+/* .social { border-top: 1px solid #e8e8e8; margin-top: 50px; padding-top: 20px; } */
 
 .pagination { font-size: 1rem; font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif; font-weight: 300; text-align: center; }
 
@@ -456,13 +455,13 @@ figcaption { font-size: 0.875rem; }
 
 .blankbox { background: hsl(0, 100%, 44%); }
 
-.img_row { height: 500px; width: 100%; overflow: hidden; box-sizing: border-box; vertical-align: middle;}
+.img_row { height: 100%; width: 100%; overflow: hidden; box-sizing: border-box; vertical-align: middle;}
 
 .col { width: 100%; height: 100%; float: left; object-fit: cover; box-sizing: border-box; padding: 1px; vertical-align: middle;}
 
-.one { width: 33.33%; }
+.one { width: 33%; vertical-align: middle}
 
-.two { width: 66.66%; }
+.two { margin-left: 2%; width: 65%; vertical-align: middle}
 
 .three { width: 100%; }
 
@@ -492,7 +491,7 @@ article a:hover, .news a:hover { text-decoration: underline; }
   .site-header .site-nav { float: right; }
   blockquote { margin-left: 2rem; padding: 2rem; }
   .social-icons-left { text-align: left; }
-  .social-icons-right { text-align: right; } }
+  .social-ic ons-right { text-align: right; } }
 @media screen and (min-width: 48em) { html { font-size: 18px; } }
 @media screen and (min-width: 64em) { html { font-size: 20px; } }
 @media screen and (min-width: 78em) { em img { max-width: 56rem; margin-left: -7em; } }
@@ -529,3 +528,28 @@ sup { position: relative; vertical-align: middle; top: -0.9ex; }
 h1, h2, h3, h4, h5, h6 { font-weight: 100; }
 
 div.equation { margin: 0.5rem 0; }
+
+table.imgtable, table.imgtable td {
+  border: none;
+  text-align: left;
+}
+
+table {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 2px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-align: left;
+vertical-align: center;
+  border: 1px solid gray;
+}
+
+table#tlayout {
+  border: none;
+  border-collapse: separate;
+  background: white;
+}
