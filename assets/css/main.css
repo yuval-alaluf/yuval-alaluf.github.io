@@ -474,6 +474,9 @@ figcaption { font-size: 0.875rem; }
 a { color: #666; text-decoration: none; }
 a:hover { color: #cf0000; text-decoration: none; }
 
+b { color: #cf0000; text-decoration: none; }
+b:hover { color: #cf0000; text-decoration: none; }
+
 article a, .news a { color: #cf0000; font-weight: 100; }
 article a:hover, .news a:hover { text-decoration: underline; }
 
