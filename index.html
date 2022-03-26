@@ -78,47 +78,94 @@
                         <h3 style="font-size: 24px">Publications</h3>
                     </div>
                     <ol class="bibliography">
+                    
                     <h2 class="year">2022</h2>
-                    <li>
-                        <div class="img_row" style="height: 100%;">
-                            <div class="col one" style="margin-top: 5%;">
-                                <img width="100%" src="assets/img/star_report.jpg">
-                            </div>
-                            <div class="col two">
-                                <div id="hyperstyle">
-                                    <span class="title" style="font-weight: bold; font-size: 18px"><i><u>State-of-the-Art in the Architecture, Methods and Applications of StyleGAN
-                                    </i></u></span>
-                                    <span class="author">
-                                        <a style="text-decoration: none" href="https://www.cs.tau.ac.il/~amberman/">Amit H. Bermano</a>, 
-                                        <a style="text-decoration: none" href="https://rinongal.github.io/">Rinon Gal</a>, 
-                                        <strong>Yuval Alaluf</strong>, 
-                                        <a style="text-decoration: none" href="https://il.linkedin.com/in/ron-mokady-665b5091">Ron Mokady</a>, 
-                                        <a href="https://yotamnitzan.github.io/" target="_blank">Yotam Nitzan </a>, 
-                                        <a style="text-decoration: none" href="https://scholar.google.com/citations?user=lbo_R54AAAAJ&hl=en">Omer Tov</a>, 
-                                        <a href="https://orpatashnik.github.io/" target="_blank">Or Patashnik </a>, 
-                                        <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or
-                                    </span>
-                                    <span class="periodical">
-                                        <span class="links"> <a></a>
+                        <li>
+                            <div class="img_row" style="height: 100%;">
+                                <div class="col one" style="margin-top: 5%;">
+                                    <br>
+                                    <video onloadeddata="this.play();" poster="third_times_the_charm.png" width="100%" playsinline loop muted
+                                        controls>
+                                        <source src="assets/img/third_times_the_charm.mp4" type="video/mp4" />
+                                        <source src="assets/img/third_times_the_charm.webm" type="video/webm" />
+                                        <source src="assets/img/third_times_the_charm.ogg" type="video/ogg" />
+                                        Your browser does not support the video tag or the file format of this video.
+                                    </video>
+                                </div>
+                                <div class="col two">
+                                    <div id="star">
+                                        <span class="title" style="font-weight: bold; font-size: 18px"><i><u>Third Time's the Charm? Image and Video Editing with StyleGAN3</i></u></span>
+                                        <span class="author">
+                                            <strong>Yuval Alaluf<sup style="text-decoration:none">*</sup></strong>, 
+                                            <a href="https://orpatashnik.github.io/" target="_blank">Or Patashnik<sup style="text-decoration:none">*</sup></a>, 
+                                            <a style="text-decoration: none" href="https://www.cs.huji.ac.il/w~wuzongze/">Zongze Wu</a>, 
+                                            <a style="text-decoration: none" href="https://www.linkedin.com/in/asif-zamir-b270b9209/">Asif Zamir</a>,
+                                            <a href="https://research.adobe.com/person/eli-shechtman/" target="_blank">Eli Shechtman</a>, 
+                                            <a href="https://www.cs.huji.ac.il/~danix/" target="_blank">Dani Lischinski</a>, 
+                                            <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or
                                         </span>
-                                    </span>
-                                    <span style='color: #cf0000'>
-                                        <i><u><b>EUROGRAPHICS, 2022 (STARs)</b></u></i>
-                                    </span>
-                                    <br>
-                                    <span class="links">
-                                        <a class="btn button" href="https://arxiv.org/abs/2202.14020" target="_blank">Paper</a>
-                                    </span>
-                                    <br>
-                                    <p>
-                                        This state-of-the-art report covers StyleGAN and the ways it has been employed since its conception, while also analyzing its limitations.
-                                        We begin by studying StyleGAN's unique architecture and rich latent spaces. We then continue our investigation and discuss how StyleGAN has been used for editing both synthetic and real images, 
-                                        leading us to the world of GAN inversion and latent space embedding. We continue our journey and explore how StyleGAN can be used to tackle a wide-range of downstream tasks, both generative and discriminative in nature.
-                                    </p>
+                                        <span class="periodical">
+                                            <span class="links"> <a></a>
+                                            </span>
+                                        </span>
+                                        <br>
+                                        <span class="links">
+                                            <a class="btn button" href="https://arxiv.org/abs/2201.13433" target="_blank">Paper</a>
+                                            <a class="btn button" href="https://github.com/yuval-alaluf/stylegan3-editing" target="_blank">Code</a>
+                                            <a class="btn button" href="https://yuval-alaluf.github.io/stylegan3-editing/" target="_blank">Project Page</a>
+                                        </span>
+                                        <br>
+                                        <p>
+                                            StyleGAN is arguably one of the most intriguing and well-studied generative models, demonstrating impressive performance in image generation, inversion, and manipulation.
+                                            In this work, we analyze the recent StyleGAN3 generaotor.
+                                            Along the way, we explore StyleGAN3's editing capabilities and introduce a video editing pipeline that leverages the capabilities of a fine-tuned StyleGAN3 generator to reduce texture sticking and expand the field of view of the edited video.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="img_row" style="height: 100%;">
+                                <div class="col one" style="margin-top: 5%;">
+                                    <br>
+                                    <img width="100%" src="assets/img/star_report.jpg">
+                                </div>
+                                <div class="col two">
+                                    <div id="star">
+                                        <span class="title" style="font-weight: bold; font-size: 18px"><i><u>State-of-the-Art in the Architecture, Methods and Applications of StyleGAN</i></u></span>
+                                        <span class="author">
+                                            <a style="text-decoration: none" href="https://www.cs.tau.ac.il/~amberman/">Amit H. Bermano</a>,
+                                            <a style="text-decoration: none" href="https://rinongal.github.io/">Rinon Gal</a>,
+                                            <strong>Yuval Alaluf</strong>,
+                                            <a style="text-decoration: none" href="https://il.linkedin.com/in/ron-mokady-665b5091">Ron Mokady</a>,
+                                            <a href="https://yotamnitzan.github.io/" target="_blank">Yotam Nitzan </a>,
+                                            <a style="text-decoration: none" href="https://scholar.google.com/citations?user=lbo_R54AAAAJ&hl=en">Omer Tov</a>,
+                                            <a href="https://orpatashnik.github.io/" target="_blank">Or Patashnik </a>,
+                                            <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or
+                                        </span>
+                                        <span class="periodical">
+                                            <span class="links"> <a></a>
+                                            </span>
+                                        </span>
+                                        <span style='color: #cf0000'>
+                                            <i><u><b>EUROGRAPHICS, 2022 (STARs)</b></u></i>
+                                        </span>
+                                        <br>
+                                        <span class="links">
+                                            <a class="btn button" href="https://arxiv.org/abs/2202.14020" target="_blank">Paper</a>
+                                        </span>
+                                        <br>
+                                        <p>
+                                            This state-of-the-art report covers StyleGAN and the ways it has been employed since its conception, while also analyzing its limitations.
+                                            We begin by studying StyleGAN's unique architecture and rich latent spaces. We then continue our investigation and discuss how StyleGAN has been used for editing both synthetic and real images, 
+                                            leading us to the world of GAN inversion and latent space embedding. We continue our journey and explore how StyleGAN can be used to tackle a wide-range of downstream tasks, both generative and discriminative in nature.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
                     <h2 class="year">2021</h2>
                         <li>
                             <div class="img_row" style="height: 100%;">
@@ -395,7 +442,6 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- <hr> -->
                     </ol>
                 </div>
                 
