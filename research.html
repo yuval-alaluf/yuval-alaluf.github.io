@@ -66,7 +66,45 @@
     <h1 class="text-right text-uppercase mb-6" style="font-size: 2.25rem; border-bottom: 5px solid var(--lightpink);">2023</h1>
 
     <div class="row mb-6">
-      
+
+      <div class="col-md-10 col-lg-10">
+        <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#conceptlab">
+          <img class="img-fluid" src="assets/img/conceptlab.png" alt="">
+        </div>
+        <div class="portfolio-label">ConceptLab: Creative Generation using Diffusion Prior Constraints</div>
+        <div class="portfolio-authors">
+          <a href="https://eladrich.github.io/" target="_blank">Elad Richardson</a>, 
+          Kfir Goldberg, 
+          <highlight><strong>Yuval Alaluf</strong></highlight>, 
+          <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
+        </div>
+        <div class="portfolio-subtitle"></div>
+        <div class="portfolio-skill">
+          <a style="padding-right: 1rem;" href="https://kfirgoldberg.github.io/ConceptLab/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+          <a style="padding-right: 1rem;" href="https://kfirgoldberg.github.io/ConceptLab/static/ConceptLab.pdf" target="_blank"> > <highlight-secondary> Paper</highlight-secondary></a>
+          <a href="https://github.com/kfirgoldberg/ConceptLab" target="_blank"> > <highlight-secondary> Code</highlight-secondary></a>
+        </div>
+      </div>
+
+      <div class="col-md-10 col-lg-10">
+        <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#neti">
+          <img class="img-fluid" src="assets/img/neti.jpeg" alt="">
+        </div>
+        <div class="portfolio-label">A Neural Space-Time Representation for Text-to-Image Personalization</div>
+        <div class="portfolio-authors">
+          <highlight><strong>Yuval Alaluf*</strong></highlight>, 
+          <a href="https://eladrich.github.io/" target="_blank">Elad Richardson*</a>, 
+          <a href="https://galmetzer.github.io/" target="_blank">Gal Metzer</a>, 
+          <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
+        </div>
+        <!-- <div class="portfolio-subtitle">SIGGRAPH Asia 2023, Journal</div> -->
+        <div class="portfolio-skill">
+          <a style="padding-right: 1rem;" href="https://neuraltextualinversion.github.io/NeTI/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+          <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2305.15391" target="_blank"> > <highlight-secondary> Paper</highlight-secondary></a>
+          <a href="https://github.com/NeuralTextualInversion/NeTI" target="_blank"> > <highlight-secondary> Code</highlight-secondary></a>
+        </div>
+      </div>
+
       <div class="col-md-10 col-lg-10">
         <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#clipascene">
           <img class="img-fluid" src="assets/img/clipascene.jpeg" alt="">
@@ -461,6 +499,87 @@
               <div class="large mb-2 font-weight-bold"><a href="https://texturepaper.github.io/TEXTurePaper/" target="_blank">> <highlight-secondary>Project website</highlight-secondary></a></div>
               <div class="large mb-2 font-weight-bold"><a href="https://arxiv.org/abs/2302.01721" target="_blank"> > <highlight-secondary>Paper</highlight-secondary></a></div>
               <div class="large mb-2 font-weight-bold"><a href="https://github.com/TEXTurePaper/TEXTurePaper" target="_blank"> > <highlight-secondary>Code</highlight-secondary></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="portfolio-modal modal fade" id="conceptlab" tabindex="-1" role="dialog" aria-labelledby="conceptlab" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fas fa-times fa-xs"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h1 class="portfolio-modal-title mb-4 text-center">ConceptLab: Creative Generation using Diffusion Prior Constraints</h1>
+              <div class="font-italic mb-3" style="text-align: center;">
+                <a href="https://eladrich.github.io/" target="_blank">Elad Richardson</a>, 
+                Kfir Goldberg, 
+                <highlight><strong>Yuval Alaluf</strong></highlight>, 
+                  <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
+                </div>
+              <div class="portfolio-subtitle"></div>
+              <div class="mb-3" style="text-align:center">
+                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/conceptlab_rat.jpeg" alt="">
+                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/conceptlab_suncrest_lizard.jpeg" alt="">
+                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/conceptlab_250_214.jpeg" alt="">
+              </div>
+              <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
+              <p class="mb-3">
+                Recent text-to-image generative models have enabled us to transform our words into vibrant, captivating imagery. The surge of personalization techniques that has followed has also allowed us to imagine unique concepts in new scenes. However, an intriguing question remains: How can we generate a new, imaginary concept that has never been seen before? In this paper, we present the task of creative text-to-image generation, where we seek to generate new members of a broad category (e.g., generating a pet that differs from all existing pets). We leverage the under-studied Diffusion Prior models and show that the creative generation problem can be formulated as an optimization process over the output space of the diffusion prior, resulting in a set of "prior constraints". To keep our generated concept from converging into existing members, we incorporate a question-answering model that adaptively adds new constraints to the optimization problem, encouraging the model to discover increasingly more unique creations. Finally, we show that our prior constraints can also serve as a strong mixing mechanism allowing us to create hybrids between generated concepts, introducing even more flexibility into the creative process.
+              </p>
+              <div class="large mb-2 font-weight-bold"><a href="https://kfirgoldberg.github.io/ConceptLab/" target="_blank">> <highlight-secondary>Project website</highlight-secondary></a></div>
+              <div class="large mb-2 font-weight-bold"><a href="https://kfirgoldberg.github.io/ConceptLab/static/ConceptLab.pdf" target="_blank"> > <highlight-secondary>Paper</highlight-secondary></a></div>
+              <div class="large mb-2 font-weight-bold"><a href="https://github.com/kfirgoldberg/ConceptLab" target="_blank"> > <highlight-secondary>Code</highlight-secondary></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="portfolio-modal modal fade" id="neti" tabindex="-1" role="dialog" aria-labelledby="neti" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fas fa-times fa-xs"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h1 class="portfolio-modal-title mb-4 text-center">A Neural Space-Time Representation for Text-to-Image Personalization</h1>
+              <div class="font-italic mb-3" style="text-align: center;">
+                <highlight><strong>Yuval Alaluf*</strong></highlight>, 
+                <a href="https://eladrich.github.io/" target="_blank">Elad Richardson*</a>, 
+                <a href="https://galmetzer.github.io/" target="_blank">Gal Metzer</a>, 
+                <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
+                </div>
+                <!-- <div class="portfolio-subtitle">SIGGRAPH Asia 2023, Journal</div> -->
+
+              <div class="mb-3" style="text-align:center">
+                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/neti_teddy.jpg" alt="">
+                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/neti_metal_bird.jpg" alt="">
+                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/neti_maeve.jpg" alt="">
+              </div>
+              <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
+              <p class="mb-3">
+                A key aspect of text-to-image personalization methods is the manner in which the target concept is represented within the generative process. This choice greatly affects the visual fidelity, downstream editability, and disk space needed to store the learned concept. In this paper, we explore a new text-conditioning space that is dependent on both the denoising process timestep (time) and the denoising U-Net layers (space) and showcase its compelling properties. A single concept in the space-time representation is composed of hundreds of vectors, one for each combination of time and space, making this space challenging to optimize directly. Instead, we propose to implicitly represent a concept in this space by optimizing a small neural mapper that receives the current time and space parameters and outputs the matching token embedding. In doing so, the entire personalized concept is represented by the parameters of the learned mapper, resulting in a compact, yet expressive, representation. Similarly to other personalization methods, the output of our neural mapper resides in the input space of the text encoder. We observe that one can significantly improve the convergence and visual fidelity of the concept by introducing a textual bypass, where our neural mapper additionally outputs a residual that is added to the output of the text encoder. Finally, we show how one can impose an importance-based ordering over our implicit representation, providing users control over the reconstruction and editability of the learned concept using a single trained model. We demonstrate the effectiveness of our approach over a range of concepts and prompts, showing our method's ability to generate high-quality and controllable compositions without fine-tuning any parameters of the generative model itself.              </p>
+              <div class="large mb-2 font-weight-bold"><a href="https://neuraltextualinversion.github.io/NeTI/" target="_blank">> <highlight-secondary>Project website</highlight-secondary></a></div>
+              <div class="large mb-2 font-weight-bold"><a href="https://arxiv.org/abs/2305.15391" target="_blank"> > <highlight-secondary>Paper</highlight-secondary></a></div>
+              <div class="large mb-2 font-weight-bold"><a href="https://github.com/NeuralTextualInversion/NeTI" target="_blank"> > <highlight-secondary>Code</highlight-secondary></a></div>
             </div>
           </div>
         </div>
