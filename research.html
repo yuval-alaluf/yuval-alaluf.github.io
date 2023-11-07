@@ -68,6 +68,26 @@
     <div class="row mb-6">
 
       <div class="col-md-10 col-lg-10">
+        <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#cross-image-attention">
+          <img class="img-fluid" src="assets/img/cross-image-attention.jpg" alt="">
+        </div>
+        <div class="portfolio-label">Cross-Image Attention for Zero-Shot Appearance Transfer</div>
+        <div class="portfolio-authors">
+          <highlight><strong>Yuval Alaluf*</strong></highlight>, 
+          Daniel Garibi*,
+          <a href="https://orpatashnik.github.io/" target="_blank">Or Patashnik</a>,
+          <a href="https://www.elor.sites.tau.ac.il/" target="_blank">Hadar Averbuch-Elor</a>,
+          <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
+        </div>
+        <div class="portfolio-subtitle"></div>
+        <div class="portfolio-skill">
+          <a style="padding-right: 1rem;" href="https://garibida.github.io/cross-image-attention/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+          <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2311.03335" target="_blank"> > <highlight-secondary> Paper</highlight-secondary></a>
+          <a href="https://github.com/garibida/cross-image-attention" target="_blank"> > <highlight-secondary> Code</highlight-secondary></a>
+        </div>
+      </div>
+
+      <div class="col-md-10 col-lg-10">
         <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#conceptlab">
           <img class="img-fluid" src="assets/img/conceptlab.png" alt="">
         </div>
@@ -394,6 +414,62 @@
   </div>
 
 </section>
+
+
+<div class="portfolio-modal modal fade" id="cross-image-attention" tabindex="-1" role="dialog" aria-labelledby="cross-image-attention" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fas fa-times fa-xs"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h1 class="portfolio-modal-title mb-4 text-center">Cross-Image Attention for Zero-Shot Appearance Transfer</h1>
+              <div class="font-italic mb-3" style="text-align: center;">
+                  <highlight><strong>Yuval Alaluf*</strong></highlight>, 
+                  Daniel Garibi*,
+                  <a href="https://orpatashnik.github.io/" target="_blank">Or Patashnik</a>,
+                  <a href="https://www.elor.sites.tau.ac.il/" target="_blank">Hadar Averbuch-Elor</a>,
+                  <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
+                </div>
+                <div class="portfolio-subtitle"></div>
+
+              <div class="mb-3" style="text-align:center">
+                <img style="width: 85%; text-align: right;" class="img-video" src="assets/img/cross_image_attention_results.jpg" alt="">
+              </div>
+              <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
+              <p class="mb-3">
+                Recent advancements in text-to-image generative models have demonstrated a remarkable ability to capture a deep semantic understanding of images. In this work, we leverage this semantic knowledge to transfer the visual appearance between objects that share similar semantics but may differ significantly in shape. To achieve this, we build upon the self-attention layers of these generative models and introduce a cross-image attention mechanism that implicitly establishes semantic correspondences across images. Specifically, given a pair of images ––– one depicting the target structure and the other specifying the desired appearance ––– our cross-image attention combines the queries corresponding to the structure image with the keys and values of the appearance image. This operation, when applied during the denoising process, leverages the established semantic correspondences to generate an image combining the desired structure and appearance. In addition, to improve the output image quality, we harness three mechanisms that either manipulate the noisy latent codes or the model's internal representations throughout the denoising process. Importantly, our approach is zero-shot, requiring no optimization or training. Experiments show that our method is effective across a wide range of object categories and is robust to variations in shape, size, and viewpoint between the two input images.  
+              </p>
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://garibida.github.io/cross-image-attention/" target="_blank">
+                  > <highlight-secondary>Project website</highlight-secondary>
+                </a>
+              </div>
+
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://arxiv.org/abs/2311.03335" target="_blank">
+                  > <highlight-secondary>Paper</highlight-secondary>
+                </a>
+              </div>
+            
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://github.com/garibida/cross-image-attention" target="_blank">
+                  > <highlight-secondary>Code</highlight-secondary>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div class="portfolio-modal modal fade" id="attend-and-excite" tabindex="-1" role="dialog" aria-labelledby="attend-and-excite" aria-hidden="true">
