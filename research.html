@@ -68,6 +68,34 @@
     <div class="row mb-6">
 
       <div class="col-md-10 col-lg-10">
+        <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#live-sketch">
+          <div class="row">
+            <img class="img-fluid" style="max-width: 20%;" src="assets/img/live-sketch/dolphin_2.gif" alt="dolphin_2"/>
+            <img class="img-fluid" style="max-width: 20%;" src="assets/img/live-sketch/penguin.gif" alt="penguin"/>
+            <img class="img-fluid" style="max-width: 20%;" src="assets/img/live-sketch/wine1.gif" alt="wine1"/>
+            <img class="img-fluid" style="max-width: 20%;" src="assets/img/live-sketch/surfer2.gif" alt="surfer2"/>
+            <img class="img-fluid" style="max-width: 20%;" src="assets/img/live-sketch/saxaphone.gif" alt="sax1"/>
+          </div>
+        </div>
+        <div class="portfolio-label">Breathing Life Into Sketches Using Text-to-Video Priors</div>
+        <div class="portfolio-authors">
+        <a href="https://rinongal.github.io/" target="_blank">Rinon Gal*</a>, 
+        <a href="https://yael-vinker.github.io/website/" target="_blank">Yael Vinker*</a>, 
+        <highlight><strong>Yuval Alaluf</strong></highlight>, 
+        <a href="https://www.cs.tau.ac.il/~amberman/">Amit H. Bermano</a>,
+        <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>,
+        <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank">Ariel Shamir</a>,
+        <a href="https://research.nvidia.com/person/gal-chechik" target="_blank">Gal Chechik</a>
+        </div>
+        <div class="portfolio-subtitle"></div>
+        <div class="portfolio-skill">
+          <a style="padding-right: 1rem;" href="https://livesketch.github.io/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+          <a style="padding-right: 1rem;" href="https://livesketch.github.io/static/source/paper.pdf" target="_blank"> > <highlight-secondary> Paper</highlight-secondary></a>
+          <a href="https://github.com/yael-vinker/live_sketch" target="_blank"> > <highlight-secondary> Code</highlight-secondary></a>
+        </div>
+      </div>
+
+      <div class="col-md-10 col-lg-10">
         <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#cross-image-attention">
           <img class="img-fluid" src="assets/img/cross-image-attention.jpg" alt="">
         </div>
@@ -377,18 +405,6 @@
 
       <div class="col-md-10 col-lg-10" align="center">
         <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#psp">
-          <!-- <video onloadeddata="this.play();" poster="celebs_sketch_to_face_gif.png" width="85%" playsinline loop muted controls>
-            <source src="assets/img/celebs_sketch_to_face_gif.mp4" type="video/mp4" />
-            <source src="assets/img/celebs_sketch_to_face_gif.webm" type="video/webm" />
-            <source src="assets/img/celebs_sketch_to_face_gif.ogg" type="video/ogg" />
-            Your browser does not support the video tag or the file format of this video.
-          </video>
-          <video onloadeddata="this.play();" poster="celebs_seg_to_face_gif.png" width="85%" playsinline loop muted controls>
-            <source src="assets/img/celebs_seg_to_face_gif.mp4" type="video/mp4" />
-            <source src="assets/img/celebs_seg_to_face_gif.webm" type="video/webm" />
-            <source src="assets/img/celebs_seg_to_face_gif.ogg" type="video/ogg" />
-            Your browser does not support the video tag or the file format of this video.
-          </video> -->
           <img class="img-fluid" src="assets/img/pSp.png" alt="">
         </div>
         <div class="portfolio-label">Encoding in Style: a StyleGAN Encoder for Image-to-Image Translation</div>
@@ -414,6 +430,68 @@
   </div>
 
 </section>
+
+
+<div class="portfolio-modal modal fade" id="live-sketch" tabindex="-1" role="dialog" aria-labelledby="live-sketch" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fas fa-times fa-xs"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h1 class="portfolio-modal-title mb-4 text-center">Breathing Life Into Sketches Using Text-to-Video Priors</h1>
+              <div class="font-italic mb-3" style="text-align: center;">
+                  <a href="https://rinongal.github.io/" target="_blank">Rinon Gal*</a>, 
+                  <a href="https://yael-vinker.github.io/website/" target="_blank">Yael Vinker*</a>, 
+                  <highlight><strong>Yuval Alaluf</strong></highlight>, 
+                  <a href="https://www.cs.tau.ac.il/~amberman/">Amit H. Bermano</a>,
+                  <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>,
+                  <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank">Ariel Shamir</a>,
+                  <a href="https://research.nvidia.com/person/gal-chechik" target="_blank">Gal Chechik</a>
+                </div>
+                <div class="portfolio-subtitle"></div>
+              <div class="video-container mb-3">
+                <video poster="clipascene.png" width="100%" playsinline controls>
+                  <source src="assets/videos/video_sketch_new.mp4" type="video/mp4" />
+                  <source src="assets/videos/video_sketch_new.webm" type="video/webm" />
+                  <source src="assets/videos/video_sketch_new.ogg" type="video/ogg" />
+                  Your browser does not support the video tag or the file format of this video.
+                </video>
+              </div>
+              <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
+              <p class="mb-3">
+                A sketch is one of the most intuitive and versatile tools humans use to convey their ideas visually. An animated sketch opens another dimension to the expression of ideas and is widely used by designers for a variety of purposes. Animating sketches is a laborious process, requiring extensive experience and professional design skills. In this work, we present a method that automatically adds motion to a single-subject sketch (hence, ``breathing life into it''), merely by providing a text prompt indicating the desired motion. The output is a short animation provided in vector representation, which can be easily edited. Our method does not require extensive training, but instead leverages the motion prior of a large pretrained text-to-video diffusion model using a score-distillation loss to guide the placement of strokes. To promote natural and smooth motion and to better preserve the sketch's appearance, we model the learned motion through two components. The first governs small local deformations and the second controls global affine transformations. Surprisingly, we find that even models that struggle to generate sketch videos on their own can still serve as a useful backbone for animating abstract representations.
+              </p>
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://livesketch.github.io/" target="_blank">
+                  > <highlight-secondary>Project website</highlight-secondary>
+                </a>
+              </div>
+
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://livesketch.github.io/static/source/paper.pdf" target="_blank">
+                  > <highlight-secondary>Paper</highlight-secondary>
+                </a>
+              </div>
+            
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://github.com/yael-vinker/live_sketch" target="_blank">
+                  > <highlight-secondary>Code</highlight-secondary>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div class="portfolio-modal modal fade" id="cross-image-attention" tabindex="-1" role="dialog" aria-labelledby="cross-image-attention" aria-hidden="true">
