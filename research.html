@@ -63,6 +63,34 @@
   <div class="container">
     <h1 class="page-section-heading text-center text-uppercase mb-6">Research</h1>
 
+    <h1 class="text-right text-uppercase mb-6" style="font-size: 2.25rem; border-bottom: 5px solid var(--lightpink);">2024</h1>
+
+    <div class="row mb-6">
+
+      <div class="col-md-10 col-lg-10">
+        <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#myvlm">
+          <div class="row">
+            <img class="img-fluid" style="max-width: 100%;" src="assets/img/myvlm_teaser.png" alt="sax1"/>
+          </div>
+        </div>
+        <div class="portfolio-label">MyVLM: Personalizing VLMs for User-Specific Queries</div>
+        <div class="portfolio-authors">
+        <highlight><strong>Yuval Alaluf</strong></highlight>, 
+        <a href="https://eladrich.github.io/" target="_blank">Elad Richardson</a>,
+        <a href="http://www.stulyakov.com/" target="_blank">Sergey Tulyakov</a>,
+        <a href="https://kfiraberman.github.io/" target="_blank">Kfir Aberman</a>,
+        <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
+        </div>
+        <div class="portfolio-subtitle"></div>
+        <div class="portfolio-skill">
+          <a style="padding-right: 1rem;" href="https://snap-research.github.io/MyVLM/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+          <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2403.14599" target="_blank"> > <highlight-secondary> Paper</highlight-secondary></a>
+          <a href="https://github.com/snap-research/MyVLM" target="_blank"> > <highlight-secondary> Code</highlight-secondary></a>
+        </div>
+      </div>
+
+    </div>
+
     <h1 class="text-right text-uppercase mb-6" style="font-size: 2.25rem; border-bottom: 5px solid var(--lightpink);">2023</h1>
 
     <div class="row mb-6">
@@ -90,7 +118,7 @@
         <div class="portfolio-subtitle">CVPR 2024</div>
         <div class="portfolio-skill">
           <a style="padding-right: 1rem;" href="https://livesketch.github.io/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
-          <a style="padding-right: 1rem;" href="https://livesketch.github.io/static/source/paper.pdf" target="_blank"> > <highlight-secondary> Paper</highlight-secondary></a>
+          <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2311.13608" target="_blank"> > <highlight-secondary> Paper</highlight-secondary></a>
           <a href="https://github.com/yael-vinker/live_sketch" target="_blank"> > <highlight-secondary> Code</highlight-secondary></a>
         </div>
       </div>
@@ -430,6 +458,66 @@
   </div>
 
 </section>
+
+
+<div class="portfolio-modal modal fade" id="myvlm" tabindex="-1" role="dialog" aria-labelledby="myvlm" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fas fa-times fa-xs"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h1 class="portfolio-modal-title mb-4 text-center">MyVLM: Personalizing VLMs for User-Specific Queries</h1>
+              <div class="font-italic mb-3" style="text-align: center;">
+                  <highlight><strong>Yuval Alaluf</strong></highlight>, 
+                  <a href="https://eladrich.github.io/" target="_blank">Elad Richardson</a>,
+                  <a href="http://www.stulyakov.com/" target="_blank">Sergey Tulyakov</a>,
+                  <a href="https://kfiraberman.github.io/" target="_blank">Kfir Aberman</a>,
+                  <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
+                </div>
+                <div class="portfolio-subtitle"></div>
+                <div class="video-container mb-4">
+                  <video poster="myvlm.png" width="100%" playsinline controls>
+                    <source src="assets/videos/myvlm_video.mov" type="video/mp4" />
+                    <source src="assets/videos/myvlm_video.webm" type="video/webm" />
+                    <source src="assets/videos/myvlm_video.ogg" type="video/ogg" />
+                    Your browser does not support the video tag or the file format of this video.
+                  </video>
+                </div>
+                <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
+              <p class="mb-3">
+                Recent large-scale vision-language models (VLMs) have demonstrated remarkable capabilities in understanding and generating textual descriptions for visual content. However, these models lack an understanding of user-specific concepts. In this work, we take a first step toward the personalization of VLMs, enabling them to learn and reason over user-provided concepts. For example, we explore whether these models can learn to recognize you in an image and communicate what you are doing, tailoring the model to reflect your personal experiences and relationships. To effectively recognize a variety of user-specific concepts, we augment the VLM with external concept heads that function as toggles for the model, enabling the VLM to identify the presence of specific target concepts in a given image. Having recognized the concept, we learn a new concept embedding in the intermediate feature space of the VLM. This embedding is tasked with guiding the language model to naturally integrate the target concept in its generated response. We apply our technique to BLIP-2 and LLaVA for personalized image captioning and further show its applicability for personalized visual question-answering. Our experiments demonstrate our ability to generalize to unseen images of learned concepts while preserving the model behavior on unrelated inputs.
+              </p>
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://snap-research.github.io/MyVLM/" target="_blank">
+                  > <highlight-secondary>Project website</highlight-secondary>
+                </a>
+              </div>
+
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://arxiv.org/abs/2403.14599" target="_blank">
+                  > <highlight-secondary>Paper</highlight-secondary>
+                </a>
+              </div>
+            
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://github.com/snap-research/MyVLM" target="_blank">
+                  > <highlight-secondary>Code</highlight-secondary>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div class="portfolio-modal modal fade" id="live-sketch" tabindex="-1" role="dialog" aria-labelledby="live-sketch" aria-hidden="true">
