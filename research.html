@@ -68,6 +68,31 @@
     <div class="row mb-6">
 
       <div class="col-md-10 col-lg-10">
+        <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#pops">
+          <div class="row">
+            <img class="img-fluid" style="max-width: 100%;" src="assets/img/teaser_pops.jpg" alt="sax1"/>
+          </div>
+        </div>
+        <div class="portfolio-label">pOps: Photo-Inspired Diffusion Operators</div>
+        <div class="portfolio-authors">
+        <a href="https://eladrich.github.io/" target="_blank">Elad Richardson</a>,
+        <highlight><strong>Yuval Alaluf</strong></highlight>,
+        <a href="https://www.sfu.ca/~amahdavi/Home.html" target="_blank">Ali Mahdavi-Amiri</a>,
+        <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
+        </div>
+        <div class="portfolio-subtitle"></div>
+        <div class="portfolio-skill">
+          <a style="padding-right: 1rem;" href="https://popspaper.github.io/pOps/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+          <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2406.01300" target="_blank"> > <highlight-secondary> Paper</highlight-secondary></a>
+          <a href="https://github.com/pOpsPaper/pOps" target="_blank"> > <highlight-secondary> Code</highlight-secondary></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row mb-6">
+
+      <div class="col-md-10 col-lg-10">
         <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#myvlm">
           <div class="row">
             <img class="img-fluid" style="max-width: 100%;" src="assets/img/myvlm_teaser.png" alt="sax1"/>
@@ -81,7 +106,7 @@
         <a href="https://kfiraberman.github.io/" target="_blank">Kfir Aberman</a>,
         <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
         </div>
-        <div class="portfolio-subtitle"></div>
+        <div class="portfolio-subtitle">ECCV 2024</div>
         <div class="portfolio-skill">
           <a style="padding-right: 1rem;" href="https://snap-research.github.io/MyVLM/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
           <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2403.14599" target="_blank"> > <highlight-secondary> Paper</highlight-secondary></a>
@@ -460,6 +485,65 @@
 </section>
 
 
+<div class="portfolio-modal modal fade" id="pops" tabindex="-1" role="dialog" aria-labelledby="pops" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fas fa-times fa-xs"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h1 class="portfolio-modal-title mb-4 text-center">pOps: Photo-Inspired Diffusion Operators</h1>
+              <div class="font-italic mb-3" style="text-align: center;">
+                  <a href="https://eladrich.github.io/" target="_blank">Elad Richardson</a>,
+                  <highlight><strong>Yuval Alaluf</strong></highlight>,
+                  <a href="https://www.sfu.ca/~amahdavi/Home.html" target="_blank">Ali Mahdavi-Amiri</a>,
+                  <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
+                </div>
+                <div class="portfolio-subtitle"></div>
+                <div class="video-container mb-4">
+                  <video poster="pops.png" width="100%" playsinline controls>
+                    <source src="assets/videos/pops_video.mp4" type="video/mp4" />
+                    <source src="assets/videos/pops_video.webm" type="video/webm" />
+                    <source src="assets/videos/pops_video.ogg" type="video/ogg" />
+                    Your browser does not support the video tag or the file format of this video.
+                  </video>
+                </div>
+                <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
+              <p class="mb-3">
+                Text-guided image generation enables the creation of visual content from textual descriptions. However, certain visual concepts cannot be effectively conveyed through language alone. This has sparked a renewed interest in utilizing the CLIP image embedding space for more visually-oriented tasks through methods such as IP-Adapter. Interestingly, the CLIP image embedding space has been shown to be semantically meaningful, where linear operations within this space yield semantically meaningful results. Yet, the specific meaning of these operations can vary unpredictably across different images. To harness this potential, we introduce pOps, a framework that trains specific semantic operators directly on CLIP image embeddings. Each pOps operator is built upon a pretrained Diffusion Prior model. While the Diffusion Prior model was originally trained to map between text embeddings and image embeddings, we demonstrate that it can be tuned to accommodate new input conditions, resulting in a diffusion operator. Working directly over image embeddings not only improves our ability to learn semantic operations but also allows us to directly use a textual CLIP loss as an additional supervision when needed. We show that pOps can be used to learn a variety of photo-inspired operators with distinct semantic meanings, highlighting the semantic diversity and potential of our proposed approach.
+              </p>
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://popspaper.github.io/pOps/" target="_blank">
+                  > <highlight-secondary>Project website</highlight-secondary>
+                </a>
+              </div>
+
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://arxiv.org/abs/2406.01300" target="_blank">
+                  > <highlight-secondary>Paper</highlight-secondary>
+                </a>
+              </div>
+
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://github.com/pOpsPaper/pOps" target="_blank">
+                  > <highlight-secondary>Code</highlight-secondary>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="portfolio-modal modal fade" id="myvlm" tabindex="-1" role="dialog" aria-labelledby="myvlm" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
@@ -480,7 +564,7 @@
                   <a href="https://kfiraberman.github.io/" target="_blank">Kfir Aberman</a>,
                   <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
                 </div>
-                <div class="portfolio-subtitle"></div>
+                <div class="portfolio-subtitle">ECCV 2024</div>
                 <div class="video-container mb-4">
                   <video poster="myvlm.png" width="100%" playsinline controls>
                     <source src="assets/videos/myvlm_video.mov" type="video/mp4" />
@@ -604,8 +688,16 @@
                 </div>
                 <div class="portfolio-subtitle">SIGGRAPH 2024, Conference</div>
 
-              <div class="mb-3" style="text-align:center">
-                <img style="width: 85%; text-align: right;" class="img-video" src="assets/img/cross_image_attention_results.jpg" alt="">
+<!--              <div class="mb-3" style="text-align:center">-->
+<!--                <img style="width: 85%; text-align: right;" class="img-video" src="assets/img/cross_image_attention_results.jpg" alt="">-->
+<!--              </div>-->
+              <div class="video-container mb-4">
+                <video poster="cia.png" width="100%" playsinline controls>
+                  <source src="assets/videos/cia_video.mp4" type="video/mp4" />
+                  <source src="assets/videos/cia_video.webm" type="video/webm" />
+                  <source src="assets/videos/cia_video.ogg" type="video/ogg" />
+                  Your browser does not support the video tag or the file format of this video.
+                </video>
               </div>
               <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
               <p class="mb-3">
@@ -770,10 +862,18 @@
                   <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>
                 </div>
               <div class="portfolio-subtitle">ACM TOG 2024</div>
-              <div class="mb-3" style="text-align:center">
-                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/conceptlab_rat.jpeg" alt="">
-                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/conceptlab_suncrest_lizard.jpeg" alt="">
-                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/conceptlab_250_214.jpeg" alt="">
+<!--              <div class="mb-3" style="text-align:center">-->
+<!--                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/conceptlab_rat.jpeg" alt="">-->
+<!--                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/conceptlab_suncrest_lizard.jpeg" alt="">-->
+<!--                <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/conceptlab_250_214.jpeg" alt="">-->
+<!--              </div>-->
+              <div class="video-container mb-4">
+                <video poster="conceptlab_video.png" width="100%" playsinline controls>
+                  <source src="assets/videos/conceptlab_video.mp4" type="video/mp4" />
+                  <source src="assets/videos/conceptlab_video.webm" type="video/webm" />
+                  <source src="assets/videos/conceptlab_video.ogg" type="video/ogg" />
+                  Your browser does not support the video tag or the file format of this video.
+                </video>
               </div>
               <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
               <p class="mb-3">
