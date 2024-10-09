@@ -68,6 +68,28 @@
     <div class="row mb-6">
 
       <div class="col-md-10 col-lg-10">
+        <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#comfygen">
+          <div class="row">
+            <img class="img-fluid" style="align-items: center; max-width: 100%;" src="assets/img/comfy_gen_res.jpg" alt="sax1"/>
+          </div>
+        </div>
+        <div class="portfolio-label">ComfyGen: Prompt-Adaptive Workflows for Text-to-Image Generation</div>
+        <div class="portfolio-authors">
+        <a href="https://rinongal.github.io/" target="_blank">Rinon Gal</a>, 
+        <a href="https://www.linkedin.com/in/adi-haviv-050aa227/?originalSubdomain=il" target="_blank">Adi Haviv</a>, 
+        <highlight><strong>Yuval Alaluf</strong></highlight>,
+        <a href="https://www.cs.tau.ac.il/~amberman/">Amit H. Bermano</a>,
+        <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>,
+        <a href="https://research.nvidia.com/person/gal-chechik" target="_blank">Gal Chechik</a>
+        </div>
+        <div class="portfolio-subtitle"></div>
+        <div class="portfolio-skill">
+          <a style="padding-right: 1rem;" href="https://comfygen-paper.github.io/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+          <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2410.01731v1" target="_blank"> > <highlight-secondary>Paper</highlight-secondary></a>
+        </div>
+      </div>
+
+      <div class="col-md-10 col-lg-10">
         <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#pops">
           <div class="row">
             <img class="img-fluid" style="max-width: 100%;" src="assets/img/teaser_pops.jpg" alt="sax1"/>
@@ -483,6 +505,57 @@
   </div>
 
 </section>
+
+
+<div class="portfolio-modal modal fade" id="comfygen" tabindex="-1" role="dialog" aria-labelledby="comfygen" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fas fa-times fa-xs"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h1 class="portfolio-modal-title mb-4 text-center">ComfyGen: Prompt-Adaptive Workflows for Text-to-Image Generation</h1>
+              <div class="font-italic mb-3" style="text-align: center;">
+                  <a href="https://rinongal.github.io/" target="_blank">Rinon Gal</a>, 
+                  <a href="https://www.linkedin.com/in/adi-haviv-050aa227/?originalSubdomain=il" target="_blank">Adi Haviv</a>, 
+                  <highlight><strong>Yuval Alaluf</strong></highlight>,
+                  <a href="https://www.cs.tau.ac.il/~amberman/">Amit H. Bermano</a>,
+                  <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>,
+                  <a href="https://research.nvidia.com/person/gal-chechik" target="_blank">Gal Chechik</a>
+                </div>
+                <div class="portfolio-subtitle"></div>
+                <div class="mb-3" style="text-align:center">
+                  <img style="width: 75%; text-align: right;" class="img-video" src="assets/img/comfygen_res_2.png" alt="">
+                </div>
+                <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
+              <p class="mb-3">
+                The practical use of text-to-image generation has evolved from simple, monolithic models to complex workflows that combine multiple specialized components. While workflow-based approaches can lead to improved image quality, crafting effective workflows requires significant expertise, owing to the large number of available components, their complex inter-dependence, and their dependence on the generation prompt. Here, we introduce the novel task of prompt-adaptive workflow generation, where the goal is to automatically tailor a workflow to each user prompt. We propose two LLM-based approaches to tackle this task: a tuning-based method that learns from user-preference data, and a training-free method that uses the LLM to select existing flows. Both approaches lead to improved image quality when compared to monolithic models or generic, prompt-independent workflows. Our work shows that prompt-dependent flow prediction offers a new pathway to improving text-to-image generation quality, complementing existing research directions in the field.
+              </p>
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://comfygen-paper.github.io/" target="_blank">
+                  > <highlight-secondary>Project website</highlight-secondary>
+                </a>
+              </div>
+
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://arxiv.org/abs/2410.01731" target="_blank">
+                  > <highlight-secondary>Paper</highlight-secondary>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 <div class="portfolio-modal modal fade" id="pops" tabindex="-1" role="dialog" aria-labelledby="pops" aria-hidden="true">
