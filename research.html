@@ -68,6 +68,29 @@
     <div class="row mb-6">
 
       <div class="col-md-10 col-lg-10">
+        <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#instantrestore">
+          <div class="row">
+            <img class="img-fluid" style="align-items: center; max-width: 97.5%;" src="assets/img/instantrestore_teaser_image.png" alt="sax1"/>
+          </div>
+        </div>
+        <div class="portfolio-label">InstantRestore: Single-Step Personalized Face Restoration with Shared-Image Attention</div>
+        <div class="portfolio-authors">
+        <a href="https://howardzhang-cv.github.io/personal_website/" target="_blank">Howard Zhang<superscript>*</superscript></a>, 
+        <highlight><strong>Yuval Alaluf<superscript>*</superscript></strong></highlight>,
+        <a href="https://sizhuoma.netlify.app/" target="_blank">Sizhuo Ma</a>,
+        <a href="https://samueli.ucla.edu/people/achuta-kadambi/" target="_blank">Achuta Kadambi</a>,
+        <a href="https://jianwang-cmu.github.io/" target="_blank">Jian Wang</a>,
+        <a href="https://kfiraberman.github.io/" target="_blank">Kfir Aberman</a>
+        </div>
+        <div class="portfolio-subtitle"></div>
+        <div class="portfolio-skill">
+          <a style="padding-right: 1rem;" href="https://snap-research.github.io/InstantRestore/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+          <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2412.06753" target="_blank"> > <highlight-secondary>Paper</highlight-secondary></a>
+          <a style="padding-right: 1rem;" href="https://github.com/snap-research/InstantRestore" target="_blank"> > <highlight-secondary>Code</highlight-secondary></a>
+        </div>
+      </div>
+
+      <div class="col-md-10 col-lg-10">
         <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#comfygen">
           <div class="row">
             <img class="img-fluid" style="align-items: center; max-width: 100%;" src="assets/img/comfy_gen_res.jpg" alt="sax1"/>
@@ -505,6 +528,65 @@
   </div>
 
 </section>
+
+
+<div class="portfolio-modal modal fade" id="instantrestore" tabindex="-1" role="dialog" aria-labelledby="instantrestore" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fas fa-times fa-xs"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h1 class="portfolio-modal-title mb-4 text-center">InstantRestore: Single-Step Personalized Face Restoration with Shared-Image Attention</h1>
+              <div class="font-italic mb-3" style="text-align: center;">
+                <a href="https://howardzhang-cv.github.io/personal_website/" target="_blank">Howard Zhang<superscript>*</superscript></a>, 
+                <highlight><strong>Yuval Alaluf<superscript>*</superscript></strong></highlight>,
+                <a href="https://sizhuoma.netlify.app/" target="_blank">Sizhuo Ma</a>,
+                <a href="https://samueli.ucla.edu/people/achuta-kadambi/" target="_blank">Achuta Kadambi</a>,
+                <a href="https://jianwang-cmu.github.io/" target="_blank">Jian Wang</a>,
+                <a href="https://kfiraberman.github.io/" target="_blank">Kfir Aberman</a>
+              </div>
+                <div class="portfolio-subtitle"></div>
+                <video poster="instantrestore_video.png" width="100%" playsinline autoplay muted loop>
+                  <source src="assets/videos/instantrestore_video.mp4" type="video/mp4" />
+                  <source src="assets/videos/instantrestore_video.webm" type="video/webm" />
+                  <source src="assets/videos/instantrestore_video.ogg" type="video/ogg" />
+                  Your browser does not support the video tag or the file format of this video.
+                </video>
+                <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
+              <p class="mb-3">
+                Face image restoration aims to enhance degraded facial images while addressing challenges such as diverse degradation types, real-time processing demands, and, most crucially, the preservation of identity-specific features. Existing methods often struggle with slow processing times and suboptimal restoration, especially under severe degradation, failing to accurately reconstruct finer-level identity details. To address these issues, we introduce InstantRestore, a novel framework that leverages a single-step image diffusion model and an attention-sharing mechanism for fast and personalized face restoration. Additionally, InstantRestore incorporates a novel landmark attention loss, aligning key facial landmarks to refine the attention maps, enhancing identity preservation. At inference time, given a degraded input and a small (~4) set of reference images, InstantRestore performs a single forward pass through the network to achieve near real-time performance. Unlike prior approaches that rely on full diffusion processes or per-identity model tuning, InstantRestore offers a scalable solution suitable for large-scale applications. Extensive experiments demonstrate that InstantRestore outperforms existing methods in quality and speed, making it an appealing choice for identity-preserving face restoration.
+              </p>
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://snap-research.github.io/InstantRestore/" target="_blank">
+                  > <highlight-secondary>Project website</highlight-secondary>
+                </a>
+              </div>
+
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://arxiv.org/abs/2412.06753" target="_blank">
+                  > <highlight-secondary>Paper</highlight-secondary>
+                </a>
+              </div>
+
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://github.com/snap-research/InstantRestore" target="_blank">
+                  > <highlight-secondary>Code</highlight-secondary>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div class="portfolio-modal modal fade" id="comfygen" tabindex="-1" role="dialog" aria-labelledby="comfygen" aria-hidden="true">
