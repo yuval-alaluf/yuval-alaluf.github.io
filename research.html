@@ -63,6 +63,50 @@
   <div class="container">
     <h1 class="page-section-heading text-center text-uppercase mb-6">Research</h1>
 
+    <h1 class="text-right text-uppercase mb-6" style="font-size: 2.25rem; border-bottom: 5px solid var(--lightpink);">2026</h1>
+
+    <div class="row mb-6">
+
+    <div class="col-md-10 col-lg-10" align="center">
+      <div class="row justify-content-center">
+        <div class="portfolio-item portfolio-item-research mx-auto" data-toggle="modal" data-target="#videosketcher">
+          <video onloadeddata="this.play();" width="23.5%" playsinline loop muted>
+            <source src="assets/videos/videosketcher_amsterdam.mp4" type="video/mp4" />
+            Your browser does not support the video tag or the file format of this video.
+          </video>
+          <video onloadeddata="this.play();" width="23.5%" playsinline loop muted>
+            <source src="assets/videos/videosketcher_rome.mp4" type="video/mp4" />
+            Your browser does not support the video tag or the file format of this video.
+          </video>
+          <video onloadeddata="this.play();" width="23.5%" playsinline loop muted>
+            <source src="assets/videos/videosketcher_tokyo.mp4" type="video/mp4" />
+            Your browser does not support the video tag or the file format of this video.
+          </video>
+          <video onloadeddata="this.play();" width="23.5%" playsinline loop muted>
+            <source src="assets/videos/videosketcher_lighthouse.mp4" type="video/mp4" />
+            Your browser does not support the video tag or the file format of this video.
+          </video>
+        </div>
+      </div>
+      <div class="portfolio-label">VideoSketcher: Video Models Prior Enable Versatile Sequential Sketch Generation</div>
+      <div class="portfolio-authors">
+      <a href="https://rhfeiyang.github.io/" target="_blank">Hui Ren</a>,
+      <highlight><strong>Yuval Alaluf</strong></highlight>,
+      <a href="https://omerbt.github.io/" target="_blank">Omer Bar Tal</a>,
+      <a href="https://www.alexander-schwing.de/" target="_blank">Alexander Schwing</a>,
+      <a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>,
+      <a href="https://yael-vinker.github.io/website/" target="_blank">Yael Vinker</a>
+      </div>
+      <div class="portfolio-subtitle">WACV 2026</div>
+      <div class="portfolio-skill">
+        <a style="padding-right: 1rem;" href="https://videosketcher.github.io/" target="_blank"> > <highlight-secondary>Project website</highlight-secondary></a>
+        <a style="padding-right: 1rem;" href="https://arxiv.org/abs/2602.15819" target="_blank"> > <highlight-secondary>Paper</highlight-secondary></a>
+        <a style="padding-right: 1rem;" href="https://github.com/rhfeiyang/VideoSketcher" target="_blank"> > <highlight-secondary>Code</highlight-secondary></a>
+      </div>
+    </div>
+
+    </div>
+
     <h1 class="text-right text-uppercase mb-6" style="font-size: 2.25rem; border-bottom: 5px solid var(--lightpink);">2025</h1>
 
     <div class="row mb-6">
@@ -575,6 +619,76 @@
 
 </section>
 
+
+
+<div class="portfolio-modal modal fade" id="videosketcher" tabindex="-1" role="dialog" aria-labelledby="videosketcher" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">
+          <i class="fas fa-times fa-xs"></i>
+        </span>
+      </button>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h1 class="portfolio-modal-title mb-4 text-center">VideoSketcher: Video Models Prior Enable Versatile Sequential Sketch Generation</h1>
+              <div class="font-italic mb-3" style="text-align: center;">
+                <a href="https://rhfeiyang.github.io/" target="_blank">Hui Ren</a>,
+                <highlight><strong>Yuval Alaluf</strong></highlight>,
+                <a href="https://omerbt.github.io/" target="_blank">Omer Bar Tal</a>,
+                <a href="https://www.alexander-schwing.de/" target="_blank">Alexander Schwing</a>,
+                <a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">Antonio Torralba</a>,
+                <a href="https://yael-vinker.github.io/website/" target="_blank">Yael Vinker</a>
+              </div>
+                <div class="portfolio-subtitle">WACV 2026</div>
+                <div class="mb-3" style="text-align:center">
+                  <video width="80%" playsinline autoplay muted loop>
+                    <source src="assets/videos/videosketcher_codrawing.mp4" type="video/mp4" />
+                    Your browser does not support the video tag or the file format of this video.
+                  </video>
+                </div>
+                <div class="mb-3" style="text-align:center">
+                  <video width="32%" playsinline autoplay muted loop>
+                    <source src="assets/videos/videosketcher_brush_unicorn.mp4" type="video/mp4" />
+                  </video>
+                  <video width="32%" playsinline autoplay muted loop>
+                    <source src="assets/videos/videosketcher_brush_piano.mp4" type="video/mp4" />
+                  </video>
+                  <video width="32%" playsinline autoplay muted loop>
+                    <source src="assets/videos/videosketcher_brush_lighthouse.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              <h6 class="large font-weight-bold"><highlight-secondary>Abstract: </highlight-secondary></h6>
+              <p class="mb-3">
+                Sketching is inherently a sequential process, in which strokes are drawn in a meaningful order to explore and refine ideas. However, most generative models treat sketches as static images, overlooking the temporal structure that underlies creative drawing. We present a data-efficient approach for sequential sketch generation that adapts pretrained text-to-video diffusion models to generate sketching processes. Our key insight is that large language models and video diffusion models offer complementary strengths for this task: LLMs provide semantic planning and stroke ordering, while video diffusion models serve as strong renderers that produce high-quality, temporally coherent visuals. We leverage this by representing sketches as short videos in which strokes are progressively drawn on a blank canvas, guided by text-specified ordering instructions. We introduce a two-stage fine-tuning strategy that decouples the learning of stroke ordering from the learning of sketch appearance. Stroke ordering is learned using synthetic shape compositions with controlled temporal structure, while visual appearance is distilled from as few as seven manually authored sketching processes that capture both global drawing order and the continuous formation of individual strokes. Despite the extremely limited amount of human-drawn sketch data, our method generates high-quality sequential sketches that closely follow text-specified orderings while exhibiting rich visual detail. We further demonstrate the flexibility of our approach through extensions such as brush style conditioning and autoregressive sketch generation, enabling additional controllability and interactive, collaborative drawing.
+              </p>
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://videosketcher.github.io/" target="_blank">
+                  > <highlight-secondary>Project website</highlight-secondary>
+                </a>
+              </div>
+
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://arxiv.org/abs/2602.15819" target="_blank">
+                  > <highlight-secondary>Paper</highlight-secondary>
+                </a>
+              </div>
+
+              <div class="large mb-2 font-weight-bold">
+                <a href="https://github.com/rhfeiyang/VideoSketcher" target="_blank">
+                  > <highlight-secondary>Code</highlight-secondary>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div class="portfolio-modal modal fade" id="pit" tabindex="-1" role="dialog" aria-labelledby="pit" aria-hidden="true">
